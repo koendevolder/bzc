@@ -3,8 +3,6 @@
 
 @import 'bootstrap/bootstrap';
 
-$siteurl: "{{ site.url }}";
-
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
@@ -174,7 +172,7 @@ $siteurl: "{{ site.url }}";
 @media (max-width: 767px) {
   // 767px is tablet width and d-md breakpoint
   .mobilebg {
-    background-image: image-url("#{$siteurl}/assets/img/mobilebg.png");
+    background-image: url("/assets/img/mobilebg.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
