@@ -1,3 +1,73 @@
 ---
 layout: default
 ---
+<div  id="map_container">
+  <div id="map"></div>
+  
+  <script>
+	/* global google */
+  function initMap() {
+    var uluru = {lat: 51.337068, lng: 4.508366};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+    google.maps.event.addDomListener(window, 'resize', function() {
+      google.maps.event.trigger(map, 'resize');
+      map.setCenter(uluru);
+    });
+  }
+  </script>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp8Q2hA9nJ6fsXup-tAJoWsrUSUyoLsPA&callback=initMap"></script>
+</div>
+
+<div class="container">
+  <h1 class="my-4 text-center">Contact</h1>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h4 class="my-4 text-left">Contactformulier</h4>
+      <p class="my-4">Zin om een keer mee te vliegen, te leren vliegen of heeft u een vraag? Contacteer ons via onderstaand formulier en wij komen zo snel mogelijk bij u terug.</p>
+
+    </div>
+    
+    <div class="col-lg-5 offset-lg-1">
+      <h4 class="my-4 text-left">Contactgegevens</h4>
+      <p class="my-4">
+      <strong>Secretaris</strong><br>
+      Rudi Van Havermaet<br>
+      <i class="fa fa-phone" aria-hidden="true"></i> 0479 53 37 14<br>
+      <br>
+      <strong>Kennismakingsvluchten</strong><br>
+      Fabio Severini<br>
+      <i class="fa fa-phone" aria-hidden="true"></i> 0488 44 44 88<br>
+      <br>
+      <strong>Clubhuis</strong><br>
+      <i class="fa fa-phone" aria-hidden="true"></i> 03 663 11 55<br>
+      GPS adres<br>
+      <a href="https://www.google.be/maps/place/Brasschaatse+Zweefvliegclub/@51.336972,4.5059795,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4060c56a7e451:0x1eecd706bd1f3005!8m2!3d51.336972!4d4.5081682" target="_blank">
+      Essensesteenweg 73-77<br>
+      2930 Brasschaat<br>
+      </a>
+      <br>
+      <strong>Maatschappelijke zetel</strong><br>
+      Zilverberkenlei 24<br>
+      2930 Brasschaat<br>
+      <br>
+      <strong>Bestuur</strong><br>
+      Voorzitter: Louis Braspenning<br>
+      Secretaris: Rudi Van Havermaet<br>
+      Penningmeester: Frits Donders<br>
+      Adjunct Head of Training: Jorik Michiels<br>
+      Operations Manager: Jorik Michiels<br>
+      Maintenance: Peter Bertels en Joost Bertels<br>
+      Sportcomité en charron: Jelle Vandebeeck<br>
+      </p>
+    </div>
+  </div>
+</div>
