@@ -1,7 +1,7 @@
 <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>	
 	<div class="form-group">
 		<label for="onderwerp">Onderwerp *</label>
-		<select id="onderwerp[]" class="form-control">
+		<select name="onderwerp[]" class="form-control">
       <option selected>Kennismakingsvluchten</option>
       <option>Algemene informatie</option>
     </select>
@@ -9,24 +9,24 @@
 
   <div class="form-group">
   	<label for="naam">Naam *</label>
-		<input type="text" id="naam" class="form-control" required>
+		<input type="text" name="naam" class="form-control" required>
 		<div class="invalid-feedback">Naam is een verplicht veld.</div>
   </div>
 
   <div class="form-group">
   	<label for="email">E-mailadres *</label>
-  	<input type="text" id="email" class="form-control" required>
+  	<input type="text" name="email" class="form-control" required>
   	<div class="invalid-feedback">E-mailadres is een verplicht veld.</div>
   </div>
   
   <div class="form-group">
   	<label for="telefoonnummer">Telefoonnummer</label>
-  	<input type="text" id="telefoonnummer" class="form-control">
+  	<input type="text" name="telefoonnummer" class="form-control">
   </div>
   
   <div class="form-group">
   	<label for="bericht">Bericht *</label>
-  	<textarea class="form-control" rows="5" id="bericht" required></textarea>
+  	<textarea class="form-control" rows="5" name="bericht" required></textarea>
   	<div class="invalid-feedback">Bericht is een verplicht veld.</div>
   </div>
 
