@@ -229,3 +229,18 @@
   opacity: 1;
   text-shadow: none;
 }
+
+.post-title {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  &:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.post-date {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
